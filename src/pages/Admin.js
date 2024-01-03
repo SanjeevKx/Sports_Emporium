@@ -21,7 +21,7 @@ const Admin = () => {
             pauseOnHover: true,
             draggable: true,
             onClose: () => {
-              window.location.href = '/Usertable';
+              window.location.href = './Usertable';
             },
           });
     } else {
