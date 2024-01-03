@@ -1,0 +1,94 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .card2 {
+    width: 190px;
+    padding: 1.9rem 1.2rem;
+    text-align: center;
+    background: #a8ff78;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #78ffd7, #a7ff78ca);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #78ffd7dd, #a7ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 40px;
+    height: 38vh;
+    width: 18vw;
+  }
+  
+  .field {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    background-color: #f0f0f3;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    width: 15rem;
+  }
+  
+  .input-icon {
+    height: 2em;
+    width: 1.4em;
+    fill: #121211;
+  }
+  
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #0d0d0d;
+    display: flex;
+  }
+  
+  /*Text*/
+  .title {
+    margin-bottom: 2rem;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #8208a1;
+  }
+  
+  /*Buttons*/
+  .btn {
+    margin: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    padding: 0.6em 1.2em;
+    background-color: #8c06ae;
+    color: aliceblue;
+    box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-link {
+    color: #2a2929;
+    display: block;
+    font-size: 0.75em;
+    transition: color 0.3s ease-out;
+  }
+ 
+  .field input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #5e6681;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+  }
+  
+  .btn-link:hover {
+    color: #ffeba7;
+  }
+  

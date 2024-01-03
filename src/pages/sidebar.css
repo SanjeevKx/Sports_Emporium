@@ -1,0 +1,169 @@
+/* Sidebar.css */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+.log{
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  color:#f4f824;
+  font-family: 'Robotzo', sans-serif;
+
+}
+
+#sidebar body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0; /* Remove default margin to ensure the side panel covers the entire page */
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  transition: all 0.5s ease;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+  transition: margin 0.5s ease, width 0.5s ease; /* Add transition for content */
+}
+
+/* Sidebar Styles */
+
+#sidebar li{
+  font-family: 'Roboto', sans-serif;
+}
+
+#sidebar {
+  z-index: 1000;
+  position: fixed;
+  top: 0; /* Position at the top of the page */
+  left: 0;
+  height: 100%;
+  width: 250px;
+  overflow-y: auto;
+  background: #3d3d3d;
+
+    
+}
+
+#sidebar header {
+  background-color:#3d3d3d;
+  font-size: 25px;
+  line-height: 53px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+#sidebar header a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+#sidebar header a:hover {
+  color: #f30e0e;
+}
+
+#sidebar .nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar .nav a {
+  background: none;
+  border-bottom: 1px solid #188bc1;
+  color: #f4fafd;
+  font-size: 16px;
+  padding: 16px 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+#sidebar .nav a:hover {
+  background: none;
+  color: #e95f1f;
+}
+
+#sidebar .nav a i {
+  margin-right: 16px;
+}
+
+.log{
+  display: inline;
+  margin-left: 100px;
+}
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  #viewport {
+    padding-left: 0;
+  }
+
+  #content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #sidebar {
+    width: 60px;
+  }
+
+  #sidebar header {
+    font-size: 14px;
+  }
+
+  #sidebar .nav a {
+    padding: 16px;
+    justify-content: center;
+  }
+
+  #sidebar .nav a span {
+    display: none;
+  }
+}
+/* Sidebar.css */
+
+#sidebar .nav ul {
+  list-style: none;
+  padding-left: 20px; /* Adjust as needed for indentation */
+}
+
+#sidebar .nav ul li {
+  margin-bottom: 5px; /* Decreased margin to minimize gap */
+}
+
+.dashboard-item .sublist {
+  display: none; /* Hide sublist by default */
+  margin-top: 5px; /* Adjust as needed for space between main item and sublist */
+}
+
+.dashboard-item .sublist li {
+  background-color: #7250f8; /* Change background color for subitems */
+  margin-bottom: 2px; /* Adjust as needed for space between subitems */
+  color:#e95f1f;
+}
+
+.dashboard-item .sublist li:hover {
+  color: black;
+  background-color: #f0f1f1; /* Change background color on hover */
+}
+
+.dashboard-item:hover .sublist {
+  display: block; /* Show sublist on hover */
+}
+
+
+/* Optional: Add styles for touch events */
+@media (hover: none) {
+  .dashboard-item:hover .sublist {
+    display: none; /* Prevent showing on touch devices when not hovered */
+  }
+}

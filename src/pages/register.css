@@ -1,0 +1,176 @@
+.container {
+    max-width: 300px;
+    height: 78vh;
+    background: #C9D6FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    border-radius: 40px;
+    padding: 1px 25px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow:
+      2.8px 2.8px 2.2px rgba(0, 0, 0, 0),
+      6.7px 6.7px 5.3px rgba(0, 0, 0, 0),
+      12.5px 12.5px 10px rgba(0, 0, 0, 0.119),
+      22.3px 22.3px 17.9px rgba(0, 0, 0, 0.138),
+      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.07),
+      100px 100px 80px rgba(0, 0, 0, 0.182);
+    
+    margin: 20px;
+    position:-webkit-sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  form .show-password input {
+   
+    margin-right: 5px; 
+  }
+  
+  .form .input {
+    margin-bottom: 6px; /* Add margin-bottom to increase space */
+  }
+  
+  .form .show-password {
+    margin-top: 17px; /* Add margin-top to create space above the checkbox */
+  }
+  
+  .show-password{
+    font-size: 13px;
+    font-weight: normal;
+    color: #3a3a3b;
+  }
+  
+  .heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: #6441A5;
+    padding: 20px;
+  }
+  
+  .form {
+    margin-top: 8px;
+  }
+  
+  .form .input {
+    width: 82%;
+    background: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 8px;
+    box-shadow: 2px #6441A5;;
+    border-inline: 2px solid transparent;
+  }
+  
+  .form .input::-moz-placeholder {
+    color: rgb(170, 170, 170);
+  }
+  
+  .form .input::placeholder {
+    color: rgb(170, 170, 170);
+  }
+  
+  .form .input:focus {
+    outline: none;
+    border-inline: 2px solid #6441A5;
+  }
+  
+  .form .forgot-password {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .form .forgot-password a {
+    font-size: 11px;
+    color: #6441A5;
+    text-decoration: none;
+  
+  }
+  
+  .form .login-button {
+    display: block;
+    width: 90%;
+    font-weight: bold;
+    background-color: #6441A5;
+    color: white;
+    padding-block: 16px;
+    margin: 16px auto;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form .login-button:hover {
+    transform: scale(1.03);
+    box-shadow: #6441A5;
+  }
+  
+  .form .login-button:active {
+    transform: scale(0.95);
+    box-shadow: #6441A5;
+  }
+  
+  .social-account-container {
+    margin-top: 0px;
+  }
+  
+  .social-account-container .title {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: rgb(87, 85, 85);
+  }
+  
+  .social-account-container .social-accounts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    margin-top: 8px;
+  }
+  
+  .social-account-container .social-accounts .social-button {
+    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 100%);
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    box-shadow: #6441A5;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .social-account-container .social-accounts .social-button .svg {
+    fill: white;
+    margin: auto;
+  }
+  
+  .social-account-container .social-accounts .social-button:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-account-container .social-accounts .social-button:active {
+    transform: scale(0.9);
+  }
+  
+  .agreement {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .agreement a {
+    text-decoration: none;
+    color:#6441A5;
+    font-size: 12px;
+  }
+  

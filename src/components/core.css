@@ -1,0 +1,46 @@
+.utab {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+  }
+
+  .mytab{
+    padding: 50px;
+  }
+  
+  td, th {
+    border-bottom: 1px solid #DDD;
+    text-align: center;
+    padding: 7px;
+    
+  }
+  tr:hover {background-color: #D6EEEE;}
+
+  th {
+    background-color: rgb(8, 109, 251);
+    color: white;
+  }
+  
+  /* .table1 {
+    display:flex;
+    margin-top: 7%;
+    justify-content: center;
+   
+  } */
+
+  .tablet{
+    width: 2px;
+    border-radius: 10%;
+    background-color: rgb(239, 123, 123);
+    margin-top: 5%;
+    padding-left: 4px;
+    padding-right: 30px;
+  }
+
+tr {
+    background-color:beige;
+}
+
+.body9{
+    border-radius: 20px;
+}
