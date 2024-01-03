@@ -10,7 +10,7 @@ const Nav=()=>
          </div>
       <ul>
 
-        <Link to='/home'>
+        <Link to='/'>
           <li>Home</li>
         </Link>
       
