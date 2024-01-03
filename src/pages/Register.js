@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './register.css';
@@ -7,7 +7,6 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const email = event.target.elements.email.value;
     const password = event.target.elements.password.value;
     const confirmPassword = event.target.elements.confirmPassword.value;
 

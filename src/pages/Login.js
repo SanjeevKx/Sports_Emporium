@@ -13,7 +13,6 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const email = event.target.elements.email.value;
     const password = event.target.elements.password.value;
 
     // password valid
@@ -130,7 +129,7 @@ const Login = () => {
           </button>
         </div>
       </div>
-      <span class="agreement"><a href="#">Read terms and conditions</a></span>
+      <span class="agreement"><link href="#">Read terms and conditions</link></span>
       <ToastContainer />
     </div>
   );

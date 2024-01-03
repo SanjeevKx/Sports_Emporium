@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './admin.css';
-import { EyeOff, LockKeyhole, UserCog } from 'lucide-react';
+import { LockKeyhole, UserCog } from 'lucide-react';
 
 const Admin = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -65,9 +63,9 @@ const Admin = () => {
         <button className="btn" type="submit">
           Login
         </button>
-        <a href="#" className="btn-link">
+        <link href="#" className="btn-link">
           Forgot your password?
-        </a>
+        </link>
       </form>
       <ToastContainer />
     </div>

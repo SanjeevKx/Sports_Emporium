@@ -1,4 +1,4 @@
-import { Diameter, Info } from "lucide-react"
+import { Info } from "lucide-react"
 import "./nav.css"
 import {Link} from 'react-router-dom'
 const Nav=()=>
