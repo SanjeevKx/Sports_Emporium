@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import {getuser,deleteUser} from '../services/Api.js'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 import { Trash2 } from 'lucide-react'
 import '../components/core.css'
 const Usertable =()=> {
     
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     const [user,setUser] = useState([])
 
     const fetchData =async()=> {

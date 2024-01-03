@@ -11,70 +11,70 @@ const Sidebar = () => {
      <div>
     <div id="sidebar">
       <header className="header">
-        <a href="./admin"><CircleUser/></a>
+        <link href="./admin"><CircleUser/></link>
       </header>
       <ul className="nav">
         <li className="dashboard-item">
-          <a href="#">
+          <link>
             <i className="zmdi zmdi-view-dashboard"></i>Ball Games
-          </a>
+          </link>
           {/* Sublist for Dashboard */}
           <ul className="sublist">
-            <li><a href="#">Football</a></li>
-            <li><a href="#">Basketball</a></li>
-            <li><a href="#">VolleyBall</a></li>
-            <li><a href="#">Air Pumps</a></li>
-            <li><a href="#">Air Pumps</a></li>
-            <li><a href="#">CorkBall</a></li>
+            <li><link>Football</link></li>
+            <li><link>Basketball</link></li>
+            <li><link>VolleyBall</link></li>
+            <li><link>Air Pumps</link></li>
+            <li><link>Air Pumps</link></li>
+            <li><link>CorkBall</link></li>
           </ul>
         </li>
         <li className="dashboard-item">
-          <a href="#">
+          <link>
             <i className="zmdi zmdi-view-dashboard"></i>Cricket
-          </a>
+          </link>
           {/* Sublist for Dashboard */}
           <ul className="sublist">
-            <li><a href="#">Cricket Bat</a></li>
-            <li><a href="#">Batting Gloves</a></li>
-            <li><a href="#">Cricket Helmet</a></li>
-            <li><a href="#">Elbow Gaurd</a></li>
-            <li><a href="#">Leg Gaurd</a></li>
+            <li><link>Cricket Bat</link></li>
+            <li><link>Batting Gloves</link></li>
+            <li><link>Cricket Helmet</link></li>
+            <li><link>Elbow Gaurd</link></li>
+            <li><link>Leg Gaurd</link></li>
           </ul>
         </li>
         <li className="dashboard-item">
-          <a href="#">
+          <link>
             <i className="zmdi zmdi-view-dashboard"></i> Badminton
-          </a>
+          </link>
           {/* Sublist for Dashboard */}
           <ul className="sublist">
-            <li><a href="#">Racket</a></li>
-            <li><a href="#">Shuttlecock</a></li>
-            <li><a href="#">Kitbags</a></li>
-            <li><a href="#">Accessories</a></li>
+            <li><link>Racket</link></li>
+            <li><link>Shuttlecock</link></li>
+            <li><link>Kitbags</link></li>
+            <li><link>Accessories</link></li>
           </ul>
         </li>
         <li className="dashboard-item">
-          <a href="#">
+          <link>
             <i className="zmdi zmdi-view-dashboard"></i>Shoes
-          </a>
+          </link>
           {/* Sublist for Dashboard */}
           <ul className="sublist">
-            <li><a href="#">Cricket Shoes</a></li>
-            <li><a href="#">Tennis Shoes</a></li>
-            <li><a href="#">Football Shoes</a></li>
-            <li><a href="#">Running Shoes</a></li>
+            <li><link>Cricket Shoes</link></li>
+            <li><link>Tennis Shoes</link></li>
+            <li><link>Football Shoes</link></li>
+            <li><link>Running Shoes</link></li>
           </ul>
         </li>
         <li className="dashboard-item">
-          <a href="#">
+          <link>
             <i className="zmdi zmdi-view-dashboard"></i>Other Sports
-          </a>
+          </link>
           {/* Sublist for Dashboard */}
           <ul className="sublist">
-            <li><a href="#">Chess</a></li>
-            <li><a href="#">Hockey</a></li>
-            <li><a href="#">Swimming</a></li>
-            <li><a href="#">Squash</a></li>
+            <li><link>Chess</link></li>
+            <li><link>Hockey</link></li>
+            <li><link>Swimming</link></li>
+            <li><link>Squash</link></li>
           </ul>
 
         </li>
