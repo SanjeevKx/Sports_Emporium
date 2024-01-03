@@ -25,7 +25,7 @@ const Nav=()=>
           <li>About</li>
         </Link>
       
-        <Link to='/sidebar'>
+        <Link to='/Sidebar'>
           <li><Info/></li>
         </Link>
       </ul>

@@ -129,7 +129,7 @@ const Login = () => {
           </button>
         </div>
       </div>
-      <span class="agreement"><link href="#">Read terms and conditions</link></span>
+      <span class="agreement"><span href="#">Read terms and conditions</span></span>
       <ToastContainer />
     </div>
   );

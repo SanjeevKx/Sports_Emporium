@@ -25,12 +25,11 @@ function App() {
       <Footer/>
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/sidebar" element={<Sidebar />}/>
+        <Route path="/Sidebar" element={<Sidebar />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/register" element={<Register />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/admin" element={<Admin />}/>
-        {/* <Route path="/owner" element={<Owner/>}/> */}
         <Route path="/Usertable" element={<Usertable/>} />
     
 

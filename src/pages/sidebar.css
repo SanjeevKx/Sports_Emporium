@@ -62,13 +62,13 @@
   font-family: 'Roboto', sans-serif;
 }
 
-#sidebar header a {
+#sidebar header span {
   color: #fff;
   display: block;
   text-decoration: none;
 }
 
-#sidebar header a:hover {
+#sidebar header span:hover {
   color: #f30e0e;
 }
 
@@ -77,7 +77,7 @@
   flex-direction: column;
 }
 
-#sidebar .nav a {
+#sidebar .nav span {
   background: none;
   border-bottom: 1px solid #188bc1;
   color: #f4fafd;
@@ -88,12 +88,12 @@
   align-items: center;
 }
 
-#sidebar .nav a:hover {
+#sidebar .nav span:hover {
   background: none;
   color: #e95f1f;
 }
 
-#sidebar .nav a i {
+#sidebar .nav span i {
   margin-right: 16px;
 }
 
@@ -120,12 +120,12 @@
     font-size: 14px;
   }
 
-  #sidebar .nav a {
+  #sidebar .nav span {
     padding: 16px;
     justify-content: center;
   }
 
-  #sidebar .nav a span {
+  #sidebar .nav span span {
     display: none;
   }
 }

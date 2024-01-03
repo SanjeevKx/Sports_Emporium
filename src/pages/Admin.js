@@ -63,9 +63,9 @@ const Admin = () => {
         <button className="btn" type="submit">
           Login
         </button>
-        <link className="btn-link">
+        <span className="btn-link">
           Forgot your password?
-        </link>
+        </span>
       </form>
       <ToastContainer />
     </div>
