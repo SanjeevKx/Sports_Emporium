@@ -12,7 +12,7 @@ const Sidebar = () => {
      <div>
     <div id="sidebar">
       <header className="header">
-        <Link class='Link' to ='/admin'><CircleUser/>
+        <Link to ='/admin' class='Link'><CircleUser/>
         </Link>
       </header>
       <ul className="nav">
