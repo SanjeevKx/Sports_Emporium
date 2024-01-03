@@ -63,7 +63,7 @@ const Admin = () => {
         <button className="btn" type="submit">
           Login
         </button>
-        <link href="#" className="btn-link">
+        <link className="btn-link">
           Forgot your password?
         </link>
       </form>
