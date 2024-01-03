@@ -4,13 +4,16 @@ import React from 'react';
 import './sidebar.css';
 import { CircleUser, LogOut } from 'lucide-react';
 import ProductCard from './ProductCard';
+import {Link} from 'react-router-dom'
+
 
 const Sidebar = () => {
   return (
      <div>
     <div id="sidebar">
       <header className="header">
-        <span href="./admin"><CircleUser/></span>
+        <Link class='Link' to ='/admin'><CircleUser/>
+        </Link>
       </header>
       <ul className="nav">
         <li className="dashboard-item">

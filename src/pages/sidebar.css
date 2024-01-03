@@ -62,13 +62,14 @@
   font-family: 'Roboto', sans-serif;
 }
 
-#sidebar header span {
+#sidebar header .Link {
   color: #fff;
   display: block;
   text-decoration: none;
+  overflow: hidden;
 }
 
-#sidebar header span:hover {
+#sidebar header .Link:hover {
   color: #f30e0e;
 }
 
