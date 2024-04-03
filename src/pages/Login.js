@@ -2,44 +2,56 @@ import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './login.css';
+import axios from 'axios';
+import bcrypt from 'bcryptjs';
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
   const handleTogglePassword = () => {
     setShowPassword((prevShowPassword) => !prevShowPassword);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const password = event.target.elements.password.value;
+    try {
+      // Decrypt the entered password for comparison
+      const hashedPassword = await bcrypt.hash(password, 10);
 
-    // password valid
-    const minLength = 8;
-    const hasLowercase = /[a-z]/.test(password);
-    const hasNumber = /\d/.test(password);
-    const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+      const response = await axios.get('http://localhost:8080/login');
+      const foundUser = response.data.find(
+        (userData) => userData.email === email && bcrypt.compareSync(password, userData.password)
+      );
 
-    if (
-      password.length >= minLength &&
-      hasLowercase &&
-      hasNumber &&
-      hasSpecialChar
-    ) {
-      toast.success('Login successful!', {
-        position: 'bottom-right',
-        autoClose: 1200,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        onClose: () => {
-          window.location.href = '/Sidebar';
-        },
-      });
-    } else {
-      toast.error('Password must be strong', {
+      if (foundUser) {
+        localStorage.setItem('email', email);
+        toast.success('Logged-In successfully!', {
+          position: 'bottom-right',
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          onClose: () => {
+            window.location.href = '/sidebar';
+          },
+        });
+      } else {
+        toast.error('Invalid credentials', {
+          position: 'bottom-right',
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+      toast.error('An error occurred while logging in. Please try again.', {
         position: 'bottom-right',
         autoClose: 2000,
         hideProgressBar: false,
@@ -60,6 +72,8 @@ const Login = () => {
           name="email"
           type="email"
           className="inputs1"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           required
         />
         <div className="forms1">
@@ -69,6 +83,8 @@ const Login = () => {
             name="password"
             type={showPassword ? 'text' : 'password'}
             className="inputs1"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             required
           />
           <div className="show-password">
@@ -78,13 +94,12 @@ const Login = () => {
               onChange={handleTogglePassword}
             />
             <label htmlFor="showPassword">
-              {showPassword ? 'Show': 'Hide'}
+              {showPassword ? 'Show' : 'Hide'}
             </label>
           </div>
         </div>
-
         <span className="forgot-password">
-          <a href="./register">Forgot Password?</a>
+          <a href="./register">Don't have an account ? Register</a>
         </span>
         <input value="Sign In" type="submit" className="login-button" />
       </form>
@@ -129,7 +144,7 @@ const Login = () => {
           </button>
         </div>
       </div>
-      <span class="agreement"><span href="#">Read terms and conditions</span></span>
+      <span class="agreement"><a href="#">Read terms and conditions</a></span>
       <ToastContainer />
     </div>
   );
